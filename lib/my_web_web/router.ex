@@ -19,6 +19,7 @@ defmodule MyWebWeb.Router do
 
     get "/home", PageController, :home
     live "/", Live.HomeLive.Index, :index
+    get "/my-cv", MyCvController, :mycv
   end
 
   # Other scopes may use custom stacks.
